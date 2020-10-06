@@ -1,0 +1,91 @@
+.add_cart {
+  max-width: 352px;
+  margin-left: 60px;
+  .cart_title {
+    font-size: 19px;
+  }
+  .cart_pay{
+    font-size: 11px;
+    font-weight: 300;
+    padding: 18px 0 27px 0;
+  }
+}
+.cart_block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .box {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+    .color_title{
+      display: flex;
+      //flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .type_detail{
+        padding-right: 11px;
+        font-size: 10px;
+      }
+      .type_color{
+        font-size: 9px;
+      }
+      .color_img{
+        margin: 0 17px 0 50px;
+      }
+    }
+  }
+
+  .box:after {
+    content: url("src/assets/img/vector.png");
+    display: block;
+    position: absolute;
+    right: 1px;
+    z-index: 1;
+  }
+
+  .box.active:after {
+    transform: rotate(180deg);
+  }
+
+  .box_clr {
+    margin: 20px 0 20px 30px;
+    display: none;
+  }
+
+  #box1, #box2, #box3, #box4, #box5 {
+    margin: 0 10px 0 30px;
+  }
+}
+
+.details{
+  display: flex;
+  flex-direction: row;
+  .characteristic{
+    max-width: 352px;
+    .characteristic_one{
+      font-size: 10px;
+      color: #383838;
+      width: 352px;
+      border-bottom: 1px solid #F5F5F5;
+      padding: 14px 0 6px 0;
+      font-weight: normal;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  .description{
+    margin-left: 60px;
+    max-width: 760px;
+    p {
+      font-weight: 300;
+      font-size: 13px;
+    }
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<%- include src/html/components/head %>
+<html lang="en">
+  <body>
+    <div class="container-fluid">
+      <div class="banner"><img class="banner_img" src="src/assets/img/close.svg"></div>
+        <img class="logo" src="src/assets/img/logo.svg">
+    </div>
+    <p class="title_url">Shop / The Truss Series / Truss Chaise Sectional</p>
+    <div class="container">
+      <div class="preview">
+      <div class="configurator"><img src="src/assets/img/configurator.svg"> </div>
+      <div class="details">
+        <div class="characteristic">
+          <div class="characteristic_one">DESCRIPTION</div>
+          <div class="characteristic_one">DIMENSIONS</div>
+          <div class="characteristic_one">MATERIALS & CONSTRUCTION</div>
+          <div class="characteristic_one">SHIPPING INFORMATION</div>
+          <div class="characteristic_one">CARE INSTRUCTIONS</div>
+          <div class="characteristic_one">FINANCING</div>
+          <div class="characteristic_one">REVIEWS</div>
+        </div>
+        <div class="description">
+          <p>
+            We've designed our version of the perfect sofa - a lean, refined profile that spares no expense to comfort.<br><br>
+            TRNK Collection upholstered seating combines our appreciation for elegant, yet practical design with the enduring qualities of American manufacturing. Our very first design, the 'Truss' series, is also our most versatile. It boasts precisely studied proportions for an incredibly comfortable sit - one equally suitable for lounging and entertaining. The series features down-wrapped, high density foam seat cushions, a rock-solid CAD-engineered plywood frame, a contract-grade sinuous spring system, and a custom designed t-shaped leg.<br><br>
+
+            The collection is available in a wide range of carefully-chosen upholstery options, including a number of 'Performance' fabrics treated with stain repellant finishes (Liquid rolls right off! It's actually quite incredible).<br><br>
+
+            Each piece is made-to-order in the USA by expert craftsmen using the highest quality materials and techniques.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="add_cart">
+        <div class="cart">
+          <p class="cart_title">TRUSS 6-SEAT SECTIONAL</p>
+            <p class="cart_pay">$10,995</p>
+            <div class="cart_block">
+          <div class="box" href="box1">
+              <div class="color_title">
+             <p class="type_detail">FABRIC:</p><p class="type_color">Mixed Media - Composition / Bayou</p>
+             <img class="color_img" src="src/assets/img/color.svg"> </div>
+          </div>
+          <div class="box_clr" id="box1">
+            <button class="btn_color1"></button></div>
+
+          <div class="box" href="box2"><div class="color_title">
+              <p>Detail1</p> </div>
+          </div>
+          <div class="box_clr" id="box2">Detail1</div>
+
+          <div class="box" href="box3"><div class="color_title">
+              <p>Detail2</p> </div>
+          </div>
+          <div class="box_clr" id="box3">Detail2</div>
+          <div class="box" href="box4"><div class="color_title">
+              <img src="src/assets/img/ellipse1.svg" class="ellipse">
+              <p>Main ColorCollar</p> </div>
+          </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.vendor.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+  </body>
+</html>
