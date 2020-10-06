@@ -43,9 +43,9 @@
 
   .box:after {
     content: url("src/assets/img/vector.png");
-    display: block;
+    display: inline-block;
     position: absolute;
-    right: 1px;
+    right: -15px;
     z-index: 1;
   }
 
@@ -88,4 +88,45 @@
       font-size: 13px;
     }
     }
+}
+
+.number{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .btn{
+    border: none;
+    outline: none;
+    background: none;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  p{
+    padding: 0 17px;
+  }
+}
+
+.btn_cart{
+  background: #383838;
+  border-radius: 4px;
+  padding: 15px 135px;
+  font-size: 10px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  margin: 20px 0 23px 0;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  p{
+    padding: 3px 5px 3px 0;
+    font-size: 9px;
+  }
 }
